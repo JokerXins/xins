@@ -5,7 +5,10 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 13pt;
+  font-size: 15pt;
+  font-weight: 300 !important;
+	letter-spacing: -0.025em;
+	line-height: 1.75em;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
