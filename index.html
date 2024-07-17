@@ -71,17 +71,19 @@
                     <ul>
                         <li><a href="https://weibo.com/dxccc" target="_blank" rel="nofollow noopener"class="icon brands fa-weibo" 
                                 title="微博关注我"><span class="label">微博</span></a></li>
+                        <li><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxNzE4MzQzNA==#wechat_redirect" target="_blank" rel="nofollow noopener"class="icon brands fa-weixin" 
+                                title="微信关注我"><span class="label">WeChat</span></a></li>
+                        <li><a href="mailto:3333339770@qq.com" target="_blank" rel="nofollow noopener" class="fa fa-envelope" 
+                                title="给我发邮件"><span class="label">Email</span></a></li>
                         <li><a href="javascript:void(0)" onclick="openModal('myModal2')" class="icon brands fa-weixin" 
                                 title="微信联系我"><span class="label">WeChat</span></a></li>
                         <li><a href="javascript:void(0)" onclick="openModal('myModal1')" class="icon brands fa-qq" 
                                 title="QQ联系我"><span class="label">QQ</span></a></li>
-                        <li><a href="mailto:3333339770@qq.com" target="_blank" rel="nofollow noopener" class="fa fa-envelope" 
-                                title="给我发邮件"><span class="label">Email</span></a></li>
                     </ul>
                 </nav>
             </header>
 
-            <!-- Modal for QR Code -->
+          <!-- Modal for QR Code -->
              <div id="myModal1" class="modal">
                 <span class="close" onclick="closeModal('myModal1')">&times;</span>
                 <img class="modal-content" id="img01" src="/image/QQ.png">
@@ -105,12 +107,12 @@
         window.ontouchmove = function() { return false; }
         window.onorientationchange = function() { document.body.scrollTop = 0; }
 
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
         }
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
         }
     </script>
     <script>
