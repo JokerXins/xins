@@ -55,6 +55,14 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        /* Media query for PC */
+        @media screen and (min-width: 768px) {
+            .modal-content {
+                width: 10cm;
+                height: 10cm;
+            }
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -81,15 +89,15 @@
                 </nav>
             </header>
 
-          <!-- Modal for QR Code -->
-             <div id="myModal1" class="modal">
+            <!-- Modal for QR Code -->
+            <div id="myModal1" class="modal">
                 <span class="close" onclick="closeModal('myModal1')">&times;</span>
                 <img class="modal-content" id="img01" src="/image/QQ.png">
             </div>
 
             <!-- Modal for QR Code 2 -->
             <div id="myModal2" class="modal">
-                <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                <span class="close" onclick="closeModal('myModal2')">&times;"></span>
                 <img class="modal-content" id="img02" src="/image/WeChat.jpg">
             </div>
 
